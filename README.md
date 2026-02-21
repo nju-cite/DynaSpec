@@ -5,8 +5,7 @@
 
 This repository contains the official PyTorch implementation, dataset, and benchmark for the paper:
 
-> **Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark** <br>
-> [Conference/Journal CVPR 2026]
+> **Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark** [CVPR 2026] <br>
 
 
 
@@ -25,20 +24,53 @@ If you find this repo or dataset useful, please give it a star ⭐ and consider 
 
 ## Benchmark and Results
 
-We comprehensively evaluate our proposed model against state-of-the-art (SOTA) algorithms on our newly proposed dataset. 
+We comprehensively evaluate our proposed model against state-of-the-art (SOTA) algorithms. 
 
-* **Metrics:** Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Spectral Angle Mapper (SAM).
+* **Metrics:** Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), Spectral Angle Mapper (SAM), and Spatio-Temporal Reduced Reference Entropic Differences (ST-RRED).
+* **Best results** are highlighted in **bold**.
 
-| Method | Venue & Year | PSNR ↑ | SSIM ↑ | SAM ↓ | Params (M) ↓ | FLOPs (G) ↓ | Code |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| GAP-TV | *ICIP 2016* | 25.12 | 0.765 | 0.215 | - | - | [Link](#) |
-| TSA-Net | *ECCV 2020* | 29.45 | 0.854 | 0.165 | 4.2 | 85.3 | [Link](#) |
-| HDNet | *CVPR 2022* | 31.20 | 0.890 | 0.142 | 2.5 | 42.1 | [Link](#) |
-| MST | *CVPR 2022* | 31.85 | 0.902 | 0.130 | 3.1 | 55.4 | [Link](#) |
-| CST | *CVPR 2023* | 32.45 | 0.915 | 0.125 | 3.0 | 50.2 | [Link](#) |
-| **Ours** | **[Venue]** | **34.12** | **0.935** | **0.105** | **2.8** | **45.6** | [Here](#) |
+### 1. Reconstruction Performance for Four SCI Architectures
 
-> **Note:** Please replace the dummy numbers above with the actual performance metrics from your paper.
+| Metric | PMVIS | SD-CASSI | NDSSI | DD-CASSI |
+| :--- | :---: | :---: | :---: | :---: |
+| **PSNR ↑** | 28.45 | 37.78 | 37.84 | **41.52** |
+| **SSIM ↑** | 0.8456 | 0.9700 | 0.9825 | **0.9893** |
+| **SAM ↓** | 5.4162 | 4.0737 | 5.4091 | **3.9084** |
+| **ST-RRED ↓** | 459.49 | **23.21** | 91.80 | 23.25 |
+
+### 2. Quantitative Comparisons on the KAIST Testset
+
+| Method | Venue | PSNR ↑ | SSIM ↑ | SAM ↓ | ST-RRED ↓ | Params | GFLOPs | Code |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| MST-L | *CVPR 2022* | 39.99 | 0.9881 | 3.8248 | 30.99 | 2.31 M | 28.23 | [Link](#) |
+| CST-L | *ECCV 2022* | 39.93 | 0.9864 | 4.1342 | 35.11 | 3.44 M | 28.53 | [Link](#) |
+| DAUHST | *NeurIPS 2022* | 38.98 | 0.9832 | 5.4514 | 37.27 | 3.36 M | 35.93 | [Link](#) |
+| GAP-Net | *IJCV 2023* | 36.92 | 0.9755 | 6.1204 | 85.34 | 4.28 M | 58.15 | [Link](#) |
+| DADF-Plus-3 | *TMI 2023* | 38.23 | 0.9832 | 4.7676 | 48.45 | 20.25 M | 76.33 | [Link](#) |
+| RDLUF | *CVPR 2023* | 39.26 | 0.9860 | 4.2932 | 39.06 | 2.17 M | 59.69 | [Link](#) |
+| PADUT | *ICCV 2023* | 38.61 | 0.9828 | 4.7154 | 47.19 | 2.57 M | 32.78 | [Link](#) |
+| S²-Transfor. | *TPAMI 2024* | 33.26 | 0.9617 | 8.0837 | 155.82 | **1.33 M** | 56.17 | [Link](#) |
+| SSR | *CVPR 2024* | 39.04 | 0.9842 | 5.2201 | 38.29 | 2.06 M | 29.92 | [Link](#) |
+| DPU | *CVPR 2024* | 40.02 | 0.9856 | 5.2250 | 25.90 | 1.88 M | 31.04 | [Link](#) |
+| DPU* | *CVPR 2024* | 40.50 | 0.9853 | 5.1685 | 26.71 | 15.14 M | 77.36 | [Link](#) |
+| **PG-SVRT (Ours)** | **[Venue]** | **41.23** | **0.9882** | **3.8050** | **19.35** | 2.48 M | **28.18** | [Here](#) |
+
+### 3. Quantitative Comparisons on the DynaSpec Testset
+
+| Method | Venue | PSNR ↑ | SSIM ↑ | SAM ↓ | ST-RRED ↓ | Params | GFLOPs | Code |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| MST-L | *CVPR 2022* | 39.58 | 0.9873 | 4.2208 | 66.31 | 2.31 M | 28.23 | [Link](#) |
+| CST-L | *ECCV 2022* | 40.06 | 0.9876 | 4.4578 | 52.19 | 3.44 M | 28.53 | [Link](#) |
+| DAUHST | *NeurIPS 2022* | 40.39 | 0.9883 | 4.7962 | 46.64 | 3.36 M | 35.93 | [Link](#) |
+| GAP-Net | *IJCV 2023* | 39.38 | 0.9851 | 5.3402 | 67.54 | 4.28 M | 58.15 | [Link](#) |
+| DADF-Plus-3 | *TMI 2023* | 39.00 | 0.9861 | 4.6057 | 73.17 | 20.25 M | 76.33 | [Link](#) |
+| RDLUF | *CVPR 2023* | 39.26 | 0.9863 | 4.4429 | 70.64 | 2.17 M | 59.69 | [Link](#) |
+| PADUT | *ICCV 2023* | 40.41 | 0.9881 | 4.4372 | 48.88 | 2.57 M | 32.78 | [Link](#) |
+| S²-Transfor. | *TPAMI 2024* | 37.10 | 0.9786 | 6.0231 | 114.17 | **1.33 M** | 56.17 | [Link](#) |
+| SSR | *CVPR 2024* | 39.66 | 0.9873 | 4.6840 | 59.03 | 2.06 M | 29.92 | [Link](#) |
+| DPU | *CVPR 2024* | 41.01 | 0.9893 | 4.4732 | 36.84 | 1.88 M | 31.04 | [Link](#) |
+| DPU* | *CVPR 2024* | 41.36 | 0.9889 | 4.5997 | 31.20 | 15.14 M | 77.36 | [Link](#) |
+| **PG-SVRT (Ours)** | **[Venue]** | **41.82** | **0.9904** | **4.0118** | **27.14** | 2.48 M | **28.18** | [Here](#) |
 
 
 
