@@ -15,10 +15,7 @@
 
 <br>
 
-This repository contains the official PyTorch implementation (**PG-SVRT**), dataset (**DynaSpec**), and benchmark for the paper.
-
-
-The primary objective of this work is to advance compressive spectral imaging from traditional image-level reconstruction (i.e., **reconstructing HSIs from a single-frame measurement**) to video-level reconstruction (i.e., **reconstructing HSIs by fusing multi-frame measurements across the temporal domain**). In the paper, the proposed baseline (PG-SVRT) primarily evaluates the reconstruction of multi-frame measurements within a CASSI system utilizing a **fixed mask**.
+&emsp;This repository contains the official PyTorch implementation (**PG-SVRT**), dataset (**DynaSpec**), and benchmark for the paper. The primary objective of this work is to advance compressive spectral imaging from traditional image-level reconstruction (i.e., **reconstructing HSIs from a single-frame measurement**) to video-level reconstruction (i.e., **reconstructing HSIs by fusing multi-frame measurements across the temporal domain**). In the paper, the proposed baseline (PG-SVRT) primarily evaluates the reconstruction of multi-frame measurements within a CASSI system utilizing a **fixed mask**.
 
 <!-- 进阶版：适配不同屏幕，精准居中+控大小 -->
 <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
@@ -39,35 +36,41 @@ The primary objective of this work is to advance compressive spectral imaging fr
   </video>
 </div>
 
-However, beyond our specific baseline, the open-sourced high-quality dynamic hyperspectral images dataset (DynaSpec) is highly versatile. For example, it can be readily adapted to advance research in a variety of other video-level hyperspectral tasks, such as reconstruction in various snapshot hyperspectral imaging systems with either adaptive or fixed modulation. It can also serve as approximately clean data for hyperspectral video denoising tasks.
+&emsp;However, beyond our specific baseline, the open-sourced high-quality dynamic hyperspectral images dataset (DynaSpec) is highly versatile. For example, it can be readily adapted to advance research in a variety of other video-level hyperspectral tasks, such as reconstruction in various snapshot hyperspectral imaging systems with either adaptive or fixed modulation. It can also serve as approximately clean data for hyperspectral video denoising tasks.
 
-If you find this repo or dataset useful, please give it a star ⭐ and consider citing our paper in your research. Thank you!
+&emsp;If you find this repo or dataset useful, please give it a star ⭐ and consider citing our paper in your research. Thank you!
 
 ---
 ## 💾 Dataset
 
-We construct a dynamic hyperspectral image dataset, named DynaSpec. We employ GaiaField push-broom hyperspectral camera to capture controllable objects frame-by-frame, covering the 400-700nm spectral range with a spectral resolution of 2 nm. Diverse motions are then manually introduced to emulate the high degrees of freedom encountered in real-world scenarios.
+&emsp;We construct a dynamic hyperspectral image dataset, named DynaSpec. We employ GaiaField push-broom hyperspectral camera to capture controllable objects frame-by-frame, covering the 400-700nm spectral range with a spectral resolution of 2 nm. Diverse motions are then manually introduced to emulate the high degrees of freedom encountered in real-world scenarios.
 
 ![image](https://github.com/nju-cite/DynaSpec/blob/main/assets/dynaspec_demo2.gif)
 
 ### Download Links
-* [Google Drive](#) * [Baidu Netdisk](#) (Password: `xxxx`) ### Directory Structure
-After downloading and extracting, organize the dataset as follows:
+* [Google Drive](#) * [Baidu Netdisk](#) (Password: `xxxx`)
+
+&emsp;After downloading, the datasets are organized as follows. Each subfolder stores a hyperspectral video sequence respectively. For example, 00001.mat to 00010.mat represent frames 1 to 10 of the hyperspectral video. Each .mat file contains a uint16 hyperspectral image variable named "img" with dimensions 1024×1024×151, as well as a 1×151 double variable named 'wavelength'.
 ```text
-Dataset_Name/
-├── train/
-│   ├── scene_01.mat
-│   ├── scene_02.mat
+Dyna_Spec_release/
+├── animal_garden/
+│   ├── 00001.mat
+│   ├── 00002.mat
 │   └── ...
-├── test/
-│   ├── scene_test_01.mat
+├── animal_plus_plus/
+│   ├── 00001.mat
+│   ├── 00002.mat
 │   └── ...
-└── mask/
-    └── mask_video.mat
+└── ...
 ```
 
 ---
 
+## 🚀 Getting Started
+Code and models will be available by the latest, on the camera ready date of CVPR 2026.
+
+---
+<!-- 
 ## Benchmark and Results
 
 We comprehensively evaluate our proposed model against state-of-the-art (SOTA) algorithms. 
@@ -121,10 +124,8 @@ We comprehensively evaluate our proposed model against state-of-the-art (SOTA) a
 For more comprehensive experimental results, visual comparisons, and detailed analysis, please refer to our full paper.
 
 ---
-
-
 ## 🚀 Getting Started
-
+All code and models will be available by the latest, on the camera ready date of CVPR 2026.
 ### 1. Environment Setup
 ```bash
 # Clone the repository
@@ -167,9 +168,9 @@ If you find our paper, dataset, or code helpful, please consider citing our work
   year={202X}
 }
 ```
-
+-->
 ## 🙏 Acknowledgments
-This code is built on [TSA-Net](https://github.com/...) and [MST](https://github.com/...). We thank the authors for sharing their codes.
+This code is built on [MST](https://github.com/caiyuanhao1998/MST). We thank the authors for sharing their codes.
 
 ## 📧 Contact
-If you have any questions, please feel free to contact `your_email@domain.edu` or open an issue.
+If you have any questions, please feel free to contact `cailijing@smail.nju.edu.cn` or `shizhan@smail.nju.edu.cn` or open an issue.
