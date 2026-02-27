@@ -1,17 +1,15 @@
-# DynaSpec
 
-[![Paper](https://img.shields.io/badge/Paper-Link-blue)](https://arxiv.org/abs/xxxx.xxxxx) [![Dataset](https://img.shields.io/badge/Dataset-Download-green)](#dataset)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 <div align="center">
 
-# Video-Level Spectral Compressive Imaging
+# DynaSpec
 
-**Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark**
+**Exploring Spatiotemporal Feature Propagation for Video-Level Compressive**
 
-*[Author 1], [Author 2], [Author 3]*
+**Spectral Reconstruction: Dataset, Model and Benchmark, CVPR 2026**
 
-**[Conference/Journal Name] 202X**
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/xxxx.xxxxx) [![Dataset](https://img.shields.io/badge/Dataset-Download-green)](#dataset) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
