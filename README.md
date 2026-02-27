@@ -27,7 +27,7 @@ The primary objective of this work is to advance compressive spectral imaging fr
     muted 
     loop 
     autoplay
-    src="https://github.com/nju-cite/DynaSpec/assets/video_comparison.mp4"
+    src="[https://github.com/nju-cite/DynaSpec/assets/video_comparison.mp4](https://github.com/user-attachments/assets/3282c721-48a2-49ab-9482-eaa3b371086d)"
   >
     你的浏览器不支持视频播放
   </video>
@@ -40,7 +40,9 @@ If you find this repo or dataset useful, please give it a star ⭐ and consider 
 ---
 ## 💾 Dataset
 
-we construct a dynamic hyperspectral image dataset, named DynaSpec. We employ GaiaField push-broom hyperspectral camera to capture controllable objects frame-by-frame, covering the 400-700nm spectral range with a spectral resolution of 2 nm. Diverse motions are then manually introduced to emulate the high degrees of freedom encountered in real-world scenarios.
+We construct a dynamic hyperspectral image dataset, named DynaSpec. We employ GaiaField push-broom hyperspectral camera to capture controllable objects frame-by-frame, covering the 400-700nm spectral range with a spectral resolution of 2 nm. Diverse motions are then manually introduced to emulate the high degrees of freedom encountered in real-world scenarios.
+
+![image](https://github.com/nju-cite/DynaSpec/blob/main/assets/dynaspec_demo.gif)
 
 ### Download Links
 * [Google Drive](#) * [Baidu Netdisk](#) (Password: `xxxx`) ### Directory Structure
