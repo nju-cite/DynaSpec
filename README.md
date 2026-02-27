@@ -20,18 +20,24 @@ This repository contains the official PyTorch implementation (**PG-SVRT**), data
 
 The primary objective of this work is to advance compressive spectral imaging from traditional image-level reconstruction (i.e., **reconstructing HSIs from a single-frame measurement**) to video-level reconstruction (i.e., **reconstructing HSIs by fusing multi-frame measurements across the temporal domain**). In the paper, the proposed baseline (PG-SVRT) primarily evaluates the reconstruction of multi-frame measurements within a CASSI system utilizing a **fixed mask**.
 
-<p align="center">
+<!-- 进阶版：适配不同屏幕，精准居中+控大小 -->
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
   <video 
-    width="800" 
+    style="
+      max-width: 90%;  /* 最大宽度占屏幕90%，适配小屏幕 */
+      width: 600px;    /* 电脑端固定宽度，超过90%时自动缩小 */
+      height: auto;    /* 保持宽高比 */
+      border-radius: 8px; /* 可选：给视频加圆角，更美观 */
+    "
     controls 
     muted 
     loop 
     autoplay
-    src="[https://github.com/nju-cite/DynaSpec/assets/video_comparison.mp4](https://github.com/user-attachments/assets/3282c721-48a2-49ab-9482-eaa3b371086d)"
+    src="https://github.com/user-attachments/assets/10cd541a-90e3-4d9e-89df-b5da1439fc26.mp4"
   >
     你的浏览器不支持视频播放
   </video>
-</p>
+</div>
 
 However, beyond our specific baseline, the open-sourced high-quality dynamic hyperspectral images dataset (DynaSpec) is highly versatile. For example, it can be readily adapted to advance research in a variety of other video-level hyperspectral tasks, such as reconstruction in various snapshot hyperspectral imaging systems with either adaptive or fixed modulation. It can also serve as approximately clean data for hyperspectral video denoising tasks.
 
@@ -42,7 +48,7 @@ If you find this repo or dataset useful, please give it a star ⭐ and consider 
 
 We construct a dynamic hyperspectral image dataset, named DynaSpec. We employ GaiaField push-broom hyperspectral camera to capture controllable objects frame-by-frame, covering the 400-700nm spectral range with a spectral resolution of 2 nm. Diverse motions are then manually introduced to emulate the high degrees of freedom encountered in real-world scenarios.
 
-![image](https://github.com/nju-cite/DynaSpec/blob/main/assets/dynaspec_demo.gif)
+![image](https://github.com/nju-cite/DynaSpec/blob/main/assets/dynaspec_demo2.gif)
 
 ### Download Links
 * [Google Drive](#) * [Baidu Netdisk](#) (Password: `xxxx`) ### Directory Structure
