@@ -21,7 +21,7 @@ This repository contains the official PyTorch implementation (**PG-SVRT**), data
 The primary objective of this work is to advance compressive spectral imaging from traditional image-level reconstruction (i.e., **reconstructing HSIs from a single-frame measurement**) to video-level reconstruction (i.e., **reconstructing HSIs by fusing multi-frame measurements across the temporal domain**). In the paper, the proposed baseline (PG-SVRT) primarily evaluates the reconstruction of multi-frame measurements within a CASSI system utilizing a **fixed mask**.
 
 <div align="center">
-  <video src="./assets/demo.mp4" width="100%" autoplay loop muted playsinline></video>
+  <video src="./assets/video_comparison.mp4" width="100%" autoplay loop muted playsinline></video>
   <p><em>Visual comparison of dynamic scene reconstruction on the DynaSpec dataset.</em></p>
 </div>
 
