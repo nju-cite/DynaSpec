@@ -50,7 +50,7 @@
 ### Download Links
 * [Google Drive](#) * [Baidu Netdisk](#) (Password: `xxxx`)
 
-&emsp;After downloading, the datasets are organized as follows. Each subfolder stores a hyperspectral video sequence respectively. For example, 00001.mat to 00010.mat represent frames 1 to 10 of the hyperspectral video. Each .mat file contains a uint16 hyperspectral image variable named "img" with dimensions 1024×1024×151, as well as a 1×151 double variable named 'wavelength'.
+&emsp;After downloading, the datasets are organized as follows. Each subfolder stores a hyperspectral video sequence respectively. For example, '00001.mat' to '00010.mat' represent frames 1 to 10 of the hyperspectral video. Each '.mat' file contains a uint16 hyperspectral image variable named 'img' with dimensions 1024×1024×151, as well as a 1×151 double variable named 'wavelength'.
 ```text
 Dyna_Spec_release/
 ├── animal_garden/
