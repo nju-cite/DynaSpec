@@ -7,8 +7,21 @@
 
 *Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark*, CVPR 2026
 
-[![Arxiv](https://img.shields.io/badge/Arxiv-2507.16318-red?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.16318) [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/Flipped99/DynaSpec)
-[![visitors](https://api.visitorbadge.io/api/visitors?path=Flipped99%2FDynaSpec&label=visitors&countColor=%2326312a)](https://visitorbadge.io/status?path=Flipped99%2FDynaSpec) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<p align="middle">
+  <a href="https://opensource.org/licenses/MIT">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Visitors">
+  <a href='https://arxiv.org/abs/0000.0000'>
+  <img src='https://img.shields.io/badge/Arxiv-0000.0000-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a> 
+  <a href='https://huggingface.co/datasets/Flipped99/DynaSpec'> 
+  <img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow'></a>
+  <a href="https://visitor-badge.laobi.icu/badge?page_id=nju-cite.DynaSpec">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=nju-cite.DynaSpec&left_text=VISITORS&left_color=gray&right_color=%2342b983" alt="Visitors">
+   </a>
+  <img src="https://img.shields.io/github/last-commit/nju-cite/DynaSpec">
+
+</p>
+
 
 </div>
 
