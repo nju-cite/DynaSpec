@@ -5,11 +5,10 @@
 
 # DynaSpec
 
-**Exploring Spatiotemporal Feature Propagation for Video-Level Compressive**
+*Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark*, CVPR 2026
 
-**Spectral Reconstruction: Dataset, Model and Benchmark, CVPR 2026**
-
-[![Paper](https://img.shields.io/badge/Paper-Link-blue)](https://arxiv.org/abs/xxxx.xxxxx) [![Dataset](https://img.shields.io/badge/Dataset-Download-green)](#dataset) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Arxiv](https://img.shields.io/badge/Arxiv-2507.16318-red?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2507.16318) [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow)](https://huggingface.co/Flipped99/DynaSpec)
+[![visitors](https://api.visitorbadge.io/api/visitors?path=Flipped99%2FDynaSpec&label=visitors&countColor=%2326312a)](https://visitorbadge.io/status?path=Flipped99%2FDynaSpec) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
 
