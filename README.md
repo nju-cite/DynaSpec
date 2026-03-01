@@ -50,7 +50,7 @@
 
 &emsp;However, beyond our specific baseline, the open-sourced high-quality dynamic hyperspectral images dataset (DynaSpec) is highly versatile. For example, it can be readily adapted to advance research in a variety of other video-level hyperspectral tasks, such as reconstruction in various snapshot hyperspectral imaging systems with either adaptive or fixed modulation. It can also serve as approximately clean data for hyperspectral video denoising tasks.
 
-&emsp;If you find this repo or dataset useful, please give it a star ⭐ and consider citing our paper in your research. Thank you!
+If you find this repo or dataset useful, please give it a star ⭐ and consider citing our paper in your research. Thank you!
 
 ---
 ## 💾 Dataset
