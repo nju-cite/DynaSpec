@@ -11,8 +11,8 @@
 <p align="middle">
   <a href="https://opensource.org/licenses/MIT">
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Visitors">
-  <a href='https://arxiv.org/abs/0000.0000'>
-  <img src='https://img.shields.io/badge/Arxiv-0000.0000-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a> 
+  <a href='https://arxiv.org/abs/2603.00611'>
+  <img src='https://img.shields.io/badge/Arxiv-2603.00611-A42C25?style=flat&logo=arXiv&logoColor=A42C25'></a> 
   <a href='https://huggingface.co/datasets/Flipped99/DynaSpec'> 
   <img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow'></a>
   <a href="https://visitor-badge.laobi.icu/badge?page_id=nju-cite.DynaSpec">
