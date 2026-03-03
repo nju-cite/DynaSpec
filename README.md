@@ -5,7 +5,7 @@
 
 # DynaSpec
 
-*Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark*, CVPR 2026
+*[Exploring Spatiotemporal Feature Propagation for Video-Level Compressive Spectral Reconstruction: Dataset, Model and Benchmark](https://arxiv.org/abs/2603.00611)* (CVPR 2026)
 
 
 <p align="middle">
