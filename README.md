@@ -60,7 +60,7 @@ If you find this repo or dataset useful, please give it a star ⭐ and consider 
 ![image](https://github.com/nju-cite/DynaSpec/blob/main/assets/dynaspec_demo2.gif)
 
 ### Download Links (Raw Data)
-* [Hugging Face](https://huggingface.co/datasets/Flipped99/DynaSpec) * [Baidu Netdisk](https://pan.baidu.com/s/19ycdo8N0il_4CInJSzQH4g?pwd=9xze)
+* [Hugging Face](https://huggingface.co/datasets/Flipped99/DynaSpec) * [Baidu Netdisk](https://pan.baidu.com/s/1qlqzkzt9aNIi8LidXSLfSw?pwd=qkk6)
 
 &emsp;The raw DynaSpec dataset contains full-resolution hyperspectral video sequences captured by GaiaField push-broom camera. Each subfolder stores one video sequence. For example, `00001.mat` to `00010.mat` represent frames 1 to 10. Each `.mat` file contains a uint16 hyperspectral image variable named `img` with dimensions 1024×1024×151, as well as a 1×151 double variable named `wavelength`.
 ```text
@@ -104,7 +104,7 @@ pip install -r requirements.txt
 
 For training and evaluation, we provide pre-processed benchmark data derived from [CAVE](https://cave.cs.columbia.edu/repository/Multispectral), [KAIST](http://vclab.kaist.ac.kr/siggraphasia2017p1/), and DynaSpec. For details on the pre-processing pipeline, please refer to our paper. This is **different** from the raw DynaSpec dataset above.
 
-Download the pre-processed data from [Baidu Netdisk](https://pan.baidu.com/s/19ycdo8N0il_4CInJSzQH4g?pwd=9xze) and organize as follows:
+Download the pre-processed data from [Baidu Netdisk](https://pan.baidu.com/s/1qlqzkzt9aNIi8LidXSLfSw?pwd=qkk6) and organize as follows:
 
 ```text
 <data_root>/
@@ -116,7 +116,7 @@ Download the pre-processed data from [Baidu Netdisk](https://pan.baidu.com/s/19y
 
 ### 3. Pre-trained Models
 
-Download the pretrained model zoo from [Baidu Netdisk](https://pan.baidu.com/s/19ycdo8N0il_4CInJSzQH4g?pwd=9xze) and place them to `./model_zoo/`:
+Download the pretrained model zoo from [Baidu Netdisk](https://pan.baidu.com/s/1qlqzkzt9aNIi8LidXSLfSw?pwd=qkk6) and place them to `./model_zoo/`:
 
 ```text
 model_zoo/
